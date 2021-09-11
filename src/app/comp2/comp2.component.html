@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HOTELS</title>
+</head>
+<body>
+ <header id="head" (click)="p('list')">
+   AMRUTHA VILAS GROUP
+ </header>
+  <mat-grid-list cols="3" rowHeight="400px" id="list">
+
+    <mat-grid-tile ><mat-card color="accent" id="cards" class="main">
+    <mat-card-header class="con" rowHeight:450px>
+           <mat-card-title style="padding:5px">AV Maharastrain</mat-card-title>
+         </mat-card-header>
+       <img mat-card-image src="assets/mh.jpg" id="image"alt="" style="height: 250px;">
+       <mat-card-content class="con">
+        <p class="stuff">
+          Maharashtrian or Marathi cuisine is the cuisine of the Marathi people from the Indian state of Maharashtra. It has distinctive attributes, while sharing much with other Indian cuisines.
+       <br>
+          Madhapur,Hyderabad
+        </p>
+       </mat-card-content>
+       <mat-card-actions class="con">
+          <button  class="stuff" id="btn" mat-raised-button color="primary" (click)="p('menu1')">MENU</button>
+       </mat-card-actions>
+     </mat-card><mat-card id="menu1" style="display: none;text-align:center ;">
+      <mat-card-title>
+        Menu
+      </mat-card-title> 
+      <mat-card-content>
+        Pavbhaji  <br>
+        Plain Vadapav<br>
+        Ragda pattice  <br>
+        Sabhudana khicidi <br>
+        Bhelpuri <br>
+        Misal Pav <br>
+        Poha <br>
+        pithla bhakri <br>
+        Kadi <br>
+       </mat-card-content>
+       <mat-card-actions>
+        <button   id="cola" mat-raised-button color="primary" (click)="c('menu1')">Back</button>
+       </mat-card-actions></mat-card>
+  </mat-grid-tile>
+ 
+  <mat-grid-tile ><mat-card color="accent" id="cards"class="main" >
+    
+    <mat-card-header class="con">
+         <mat-card-title style="padding:5px">AV Rajasthani </mat-card-title>
+       </mat-card-header>
+     <img mat-card-image src="assets/rj.jpg" id="image"alt="" style="height: 250px;">
+     <mat-card-content class="con">
+      <p class="stuff">  
+        Rajasthani cuisine was influenced by both the war-like lifestyles of its inhabitants and the availability of ingredients in this arid region. Food that could last for several days and could be eaten without heating was preferred.
+      <br>
+        Hitech city,Hyderabad
+      </p>
+     </mat-card-content>
+     <mat-card-actions class="con">
+        <button  class="stuff"id="btn" mat-raised-button color="primary" (click)="p('menu2')">MENU</button>
+     </mat-card-actions>
+   </mat-card>
+   <mat-card id="menu2" style="display: none;text-align:center ;">
+    <mat-card-title>
+      Menu
+    </mat-card-title> 
+    <mat-card-content>
+       Pyaj ki Kachori <br>
+       gatte <br>
+       Kadhi <br>
+       bajara ki raab <br>
+       aam ki launji <br>
+       kalmi vada <br>
+       mawa kachori <br>
+     </mat-card-content>
+     <mat-card-actions>
+      <button   id="cola" mat-raised-button color="primary" (click)="c('menu2')">Back</button>
+     </mat-card-actions>
+   </mat-card>
+</mat-grid-tile>
+
+<mat-grid-tile ><mat-card color="accent" id="cards" class="main" >
+    
+  <mat-card-header class="con">
+       <mat-card-title style="padding:5px">AV Gujarati</mat-card-title>
+     </mat-card-header>
+   <img mat-card-image src="assets/guj.jpg" id="image"alt="" style="height: 250px;">
+   <mat-card-content class="con">
+    <p class="stuff">
+       gujarati cuisine consists of wide varieties of flavours adn the cusine is known for the most loved savouries which are also healthy and available throughout the year.
+   <br>
+      Banjara Hills,Hyderabad
+    </p>
+   </mat-card-content>
+
+   <mat-card-actions class="con">
+      <button  class="stuff" id="btn" mat-raised-button color="primary" (click)="p('menu3')">MENU</button>
+   </mat-card-actions>
+ </mat-card>
+ <mat-card id="menu3" style="display: none;text-align:center ;">
+  <mat-card-title>
+    Menu
+  </mat-card-title> 
+  <mat-card-content>
+    khandvi <br>
+   khaman Dhokla <br>
+    thepla <br>
+    Handvo <br>
+    Lilva kachori <br>
+    Khichu <br>
+    Gota <br>
+    Khakra chat <br>
+    Dabeli <br>
+   </mat-card-content>
+   <mat-card-actions>
+    <button   id="cola" mat-raised-button color="primary" (click)="c('menu3')">Back</button>
+   </mat-card-actions>
+ </mat-card>
+</mat-grid-tile>
+
+<mat-grid-tile >
+  
+  <mat-card color="accent" id="cards"  class="main" >
+    
+  <mat-card-header class="con">
+       <mat-card-title style="padding:5px">AV Malabar</mat-card-title>
+     </mat-card-header>
+   <img mat-card-image src="assets/kl.jpg" id="image"alt="" style="height: 250px;">
+   <mat-card-content class="con">
+    <p class="stuff"> 
+      Malabar cuisine is a blend of Arabia, Zamorin and Chirakkal styles of preparing food, unique to the region spanning from Kasargod to Malappuram in Kerala. In my opinion, it is heaven for a food lover, offering some of the tastiest dishes that Kerala has to offer
+   <br>
+      Jubliee Hills,Hyderabad
+    </p>
+   </mat-card-content>
+   <mat-card-actions class="con">
+      <button  class="stuff" id="btn" mat-raised-button color="primary" (click)="p('menu4')">MENU</button>
+   </mat-card-actions>
+ </mat-card>
+ <mat-card id="menu4" style="display: none;text-align:center ;">
+  <mat-card-title>
+    Menu
+  </mat-card-title> 
+  <mat-card-content>
+    Idiyappam <br>
+    Appam with stew<br>
+    Sugeen <br>
+    Thattu dosa <br>
+    Pazham nirachathu <br>
+    Unnakaya <br>
+    Neypathiri <br>
+    Chatti pathiri <br>
+   </mat-card-content>
+   <mat-card-actions>
+    <button   id="cola" mat-raised-button color="primary" (click)="c('menu4')">Back</button>
+   </mat-card-actions>
+ </mat-card>
+</mat-grid-tile>
+
+
+<mat-grid-tile >
+  
+  <mat-card color="accent" id="cards" class="main" >
+    
+  <mat-card-header class="con">
+       <mat-card-title style="padding:5px">AV Bengali</mat-card-title>
+     </mat-card-header>
+   <img mat-card-image src="assets/bg.jpg" id="image"alt="" style="height: 250px;">
+   <mat-card-content class="con">
+    <p class="stuff"> 
+      Bengali cuisine is a blend of sweet and spicy flavours. ... The simplest of meals gain an exquisite identity on adding 'phoron' or a traditional mix of pungent spices. The 'panch phoron' is used generously and it includes a combination of five spices.
+  <br>
+     LB Nagar,Hyderabad
+    </p>
+   </mat-card-content>
+   <mat-card-actions class="con">
+      <button  class="stuff" id="btn" mat-raised-button color="primary" (click)="p('menu5')">MENU</button>
+   </mat-card-actions>
+ </mat-card>
+ <mat-card id="menu5" style="display: none;text-align:center ;">
+  <mat-card-title>
+    Menu
+  </mat-card-title> 
+  <mat-card-content>
+   Benagali phuchka <br>
+     Shinghara<br>
+      Ghugni<br>
+      Kathi rolls egg <br>
+      kathi roll chicken <br>
+      chop with kasundi <br>
+      Jhalmuri <br>
+      Luchi <br>
+      dim-er devil bengali <br>
+      Nimki <br>
+ </mat-card-content>
+   <mat-card-actions>
+    <button   id="cola" mat-raised-button color="primary" (click)="c('menu5')">Back</button>
+   </mat-card-actions>
+ </mat-card>
+</mat-grid-tile>
+
+
+<mat-grid-tile >
+  
+  <mat-card color="accent" id="cards" class="main" >
+    
+  <mat-card-header class="con">
+       <mat-card-title style="padding:5px">AV Punjabi</mat-card-title>
+     </mat-card-header>
+   <img mat-card-image src="assets/pb.jpg" id="image"alt="" style="height: 250px;">
+   <mat-card-content class="con">
+    <p class="stuff"> 
+      Punjabi cuisine is a culinary style originating in the Punjab, a region in the northern part of the Indian subcontinent, which is now divided in an Indian part and a Pakistani part. This cuisine has a rich tradition of many distinct and local ways of cooking.
+    <br>
+      Jubliee Hills,Hyderabad
+    </p>
+   </mat-card-content>
+   <mat-card-actions class="con">
+      <button  class="stuff" id="btn" mat-raised-button color="primary" (click)="p('menu6')">MENU</button>
+   </mat-card-actions>
+ </mat-card>
+ <mat-card id="menu6" style="display: none;text-align:center ;">
+  <mat-card-title>
+    Menu
+  </mat-card-title> 
+  <mat-card-content>
+    Chole chat<br>
+    Choore <br>
+    Punjabi samosa <br>
+    mathri <br>
+    Aloo tikki <br>
+    Paneer tikka <br>
+    Punjiri <br>
+    Amritsari Macchi <br>
+    Dahi balle <br>
+   </mat-card-content>
+   <mat-card-actions>
+    <button   id="cola" mat-raised-button color="primary" (click)="c('menu6')">Back</button>
+   </mat-card-actions>
+ </mat-card>
+</mat-grid-tile>
+
+
+<mat-grid-tile >
+  
+  <mat-card color="accent" id="cards" class="main" >
+    
+  <mat-card-header class="con">
+       <mat-card-title style="padding:5px">AV Andhra</mat-card-title>
+     </mat-card-header>
+   <img mat-card-image src="assets/ap.jpg" id="image"alt="" style="height: 250px;">
+   <mat-card-content class="con">
+    <p class="stuff"> 
+      Coastal Andhra has a lot of meat and seafood simmering in its local pots which is paired with tangy hot curries and served with rice. Pulihora, or tamarind rice along with green chilies is the most popular food in Andhra Pradesh.
+   <br>
+      Banjara Hills,Hyderabad
+    </p>
+   </mat-card-content>
+   <mat-card-actions class="con">
+      <button  class="stuff" id="btn" mat-raised-button color="primary" (click)="p('menu7')">MENU</button>
+   </mat-card-actions>
+ </mat-card>
+ <mat-card id="menu7" style="display: none;text-align:center ;">
+  <mat-card-title>
+    Menu
+  </mat-card-title> 
+  <mat-card-content>
+     mirchi bajji <br>
+    punugulu <br>
+     medu vada<br>
+     Uppindi <br>
+     Aratikaya bajji <br>
+     pesara Gaarelu <br>
+     chakodi chat <br>
+    </mat-card-content>
+   <mat-card-actions>
+    <button   id="cola" mat-raised-button color="primary" (click)="c('menu7')">Back</button>
+   </mat-card-actions>
+ </mat-card>
+</mat-grid-tile>
+
+  
+<mat-grid-tile >
+  
+  <mat-card color="accent" id="cards" class="main" >
+    
+  <mat-card-header class="con">
+       <mat-card-title style="padding:5px"> AV Bihari</mat-card-title>
+     </mat-card-header>
+   <img mat-card-image src="assets/bh.jpg" id="image"alt="" style="height: 250px;">
+   <mat-card-content class="con">
+    <p class="stuff"> 
+      Dishes for which Bihar is famous include Bihari kebabs, litti chokha, Bihari boti, Bihari chicken masala, sattu paratha (parathas stuffed with roasted gram flour), chokha (spicy mashed eggplant and potatoes), fish curry and posta-dana ka halwa.
+    <br>
+      Jubliee Hills,Hyderabad
+    </p>
+   </mat-card-content>
+   <mat-card-actions class="con">
+      <button  class="stuff" id="btn" mat-raised-button color="primary" (click)="p('menu8')">MENU</button>
+   </mat-card-actions>
+ </mat-card>
+ <mat-card id="menu8" style="display: none;text-align:center ;">
+  <mat-card-title>
+    Menu
+  </mat-card-title> 
+  <mat-card-content>
+   litti chokha <br>
+   mal pua  <br>
+   Bihari boti <br>
+   Bihari kabab <br>
+   dal peetha <br>
+   Thekua <br>
+   gur anarsa <br>
+   Laai <br>
+   balushahi <br>
+   kadhi badi <br>
+   </mat-card-content>
+   <mat-card-actions>
+    <button   id="cola" mat-raised-button color="primary" (click)="c('menu8')">Back</button>
+   </mat-card-actions>
+ </mat-card>
+</mat-grid-tile>
+
+
+<mat-grid-tile >
+  
+  <mat-card color="accent" id="cards" class="main" >
+    
+  <mat-card-header class="con">
+       <mat-card-title style="padding:5px">AV Madhyapradesh</mat-card-title>
+     </mat-card-header>
+   <img mat-card-image src="assets/mp.jpg" id="image"alt="" style="height: 250px;">
+   <mat-card-content class="con">
+    <p class="stuff"> 
+      The cuisine of Madhya Pradesh varies regionally. Wheat is more common in the north and rice is more popular in the south. The cuisine of Madhya Pradesh takes inspiration from its neighbours Rajasthan, Uttar Pradesh and Maharashtra.
+    <br>
+      Hitech city,Hyderabad
+    </p>
+   </mat-card-content>
+   <mat-card-actions class="con">
+      <button  class="stuff" id="btn" mat-raised-button color="primary" (click)="p('menu9')">MENU</button>
+   </mat-card-actions>
+ </mat-card>
+ <mat-card id="menu9" style="display: none;text-align:center ;">
+  <mat-card-title>
+    Menu
+  </mat-card-title> 
+  <mat-card-content>
+     Dal bafla <br>
+     poha jalebi <br>
+     bhuttey ke kees<br>
+     Rogan josh <br>
+     Seekh kababs <br>
+     chakki ki shaak <br>
+     Bedai <br>
+     khopra patties <br>
+     gajak <br>
+ </mat-card-content>
+ <mat-card-actions>
+    <button   id="cola" mat-raised-button color="primary" (click)="c('menu9')">Back</button>
+   </mat-card-actions>
+ </mat-card>
+</mat-grid-tile>
+
+
+<mat-grid-tile >
+  
+  <mat-card color="accent" id="cards" class="main" >
+    
+  <mat-card-header class="con">
+       <mat-card-title style="padding:5px">AV Karnataka</mat-card-title>
+     </mat-card-header>
+   <img mat-card-image src="assets/ka.jpg" id="image"alt="" style="height: 250px;">
+   <mat-card-content class="con">
+    <p class="stuff"> 
+      Karnataka’s cuisine takes influence from its neighbours like Kerala, Andhra Pradesh, Tamil Nadu and Maharashtra. However, the flavours change from region to region. Mangalore and Uttara Canara are famous for their tangy seafood.
+    <br>
+    
+      Madhapur,Hyderabad
+    </p>
+   </mat-card-content>
+   <mat-card-actions class="con">
+      <button  class="stuff" id="btn" mat-raised-button color="primary" (click)="p('menu10')">MENU</button>
+   </mat-card-actions>
+ </mat-card>
+ <mat-card id="menu10" style="display: none;text-align:center ;">
+  <mat-card-title>
+    Menu
+  </mat-card-title> 
+  <mat-card-content>
+     Masala vada <br>
+     Mysore bonda<br>
+     Akki roti<br>
+     Nippattu <br>
+     Neer dosa <br>
+     Ragi roti <br>
+     Maddur vada <br>
+     Girmit <br>
+   </mat-card-content>
+   <mat-card-actions>
+    <button   id="cola" mat-raised-button color="primary" (click)="c('menu10')">Back</button>
+   </mat-card-actions>
+ </mat-card>
+</mat-grid-tile>
+</mat-grid-list>
+</body>
+</html>

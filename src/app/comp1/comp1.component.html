@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <mat-grid-list cols="3" rowHeight="400px" id="list">
+
+    <mat-grid-tile *ngFor="let i of data">
+      <mat-card color="accent" id="cards" class="main">
+        <mat-card-header class="con">
+          <mat-card-title style="padding:5px">{{i.name}}</mat-card-title>
+        </mat-card-header>
+        <img mat-card-image [src]=i.image id="image" [alt]=i.name style="height: 250px;">
+        <mat-card-content class="con">
+          <p class="stuff">
+            {{i.description}}
+            <br>
+            {{i.address}}
+          </p>
+        </mat-card-content>
+        <mat-card-actions class="con">
+          <button class="stuff" id="btn" mat-raised-button color="primary" (click)="p(i.resno)">MENU</button>
+        </mat-card-actions>
+      </mat-card>
+      <mat-card id={{i.resno}} class="menus" style="display: none;text-align:center ;">
+        <mat-card-title>
+          Menu
+        </mat-card-title>
+        <mat-card-content>
+          <div id="men">
+            <table>
+              <tr *ngFor="let m of i.menu">
+                <td>
+                  <input type="checkbox" name="checked" #op (change)="add(op.checked,m,i)" id="">
+                </td>
+                <td>{{m}}</td>
+              </tr>
+            </table>
+          </div>
+        </mat-card-content>
+        <mat-card-actions>
+          <button id="cola" mat-raised-button color="primary" (click)="c(i.resno)">Back</button>
+        </mat-card-actions>
+      </mat-card>
+    </mat-grid-tile>
+  </mat-grid-list>
+</body>
+
+</html>

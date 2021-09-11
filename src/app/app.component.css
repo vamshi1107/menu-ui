@@ -1,0 +1,24 @@
+
+header{
+    height: 50px;
+    text-align: center;
+    font-family: fantasy;
+    background-color: red;
+    font-size: 25px;
+    padding: 6px;
+    width: 100%;
+    padding-top: 20px;
+    position: fixed;
+    top:0px;
+    z-index: 10000;
+    border-bottom:5px azure ;
+    border-bottom-style: groove;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+#odd{
+    color: aliceblue;
+    width: 100px;
+}

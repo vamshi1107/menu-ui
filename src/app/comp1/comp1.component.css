@@ -1,0 +1,188 @@
+button{
+    position: relative;
+    left:100px;
+    
+}
+a{
+    width: 100px;
+    background-color: blue;
+    margin: 20px;
+    text-decoration: none;
+    font-family: fantasy;
+}
+mat-card{
+    margin:10px;
+    height: fit-content;
+    width: 400px;
+    height: 300px;
+    justify-content: center;
+    box-shadow: 20px black solid;
+    background-color: red;
+    animation-delay: 1s;
+    border-radius:13px;
+    transition-property: all;
+    transition: 1s linear;
+    box-shadow: 5px solid gray;
+}
+#menu{
+    display: none;
+}
+@keyframes anim {
+    0%{
+        transform: rotateY(0deg);
+    }
+    10%{
+        transform: rotateY(18deg);
+    }
+    20%{
+        transform: rotateY(36deg);
+    }
+    30%{
+        transform: rotateY(54deg);
+    }
+    40%{
+        transform: rotateY(72deg);
+    }
+    50%{
+        transform: rotateY(90deg);
+    }
+    60%{
+        transform: rotateY(108deg);
+    }
+    70%{
+        transform: rotateY(126deg);
+    }
+    80%{
+        transform: rotateY(144deg);
+    }
+    90%{
+        transform: rotateY(162deg);
+    }
+    100%{
+        transform: rotateY(180deg);
+        }
+}
+
+.main:hover{
+   
+    animation: anim 1s linear 50ms;
+    
+}
+mat-card .stuff{
+    display: none;
+}
+mat-card:hover #image{
+    transition:all 1s linear;
+    display: none;
+    
+}
+mat-card:hover .stuff{
+    display: block;
+    animation: stana 1s linear;
+    
+}
+mat-card:hover .con{
+    display: block;
+}
+.image{
+    position:relative;
+    height:250px;
+    width: 100%;
+    background-image:url("https://picsum.photos/200/300");
+}
+
+.stuff{
+    display: none;
+}
+#id{
+    display: none;
+}
+
+mat-grid-list{
+    background-color: rgb(45, 45, 233);
+}
+.image:hover{
+    display: none;
+}
+header{
+    height: 50px;
+    text-align: center;
+    font-family: fantasy;
+    background-color: red;
+    font-size: 25px;
+    padding: 6px;
+    width: 100%;
+    padding-top: 20px;
+    position: fixed;
+    top:0px;
+    z-index: 10000;
+    border-bottom:5px azure ;
+    border-bottom-style: groove;
+
+}
+mat-grid-list{
+    top:60px;
+    position: relative;
+    z-index: 500;
+}
+.item{
+    top:100px;
+    display: none;
+    color:black;
+    font-family: fantasy;
+    font-size:20px;
+    background-color: red;
+    border-radius:15px;
+    width: 300px;
+    height: 330px;
+    justify-content: center;
+    transition-property: all;
+    transition:2s linear ;
+
+}
+ul li{
+    position: relative;
+    list-style: none;
+    left: 3%;
+    box-shadow: 5px;
+    margin-left: -20px;
+}
+
+#cola{
+    width:80px;
+    left:-10px;
+    bottom: 0px;
+    position: sticky;
+    z-index: 1000;
+}
+#menu10{
+    transition-property: all;
+    transition: 2s linear;
+}
+mat-card-title{
+    font-family: fantasy;
+}
+
+#men{
+    max-height:220px ;
+    overflow: auto;
+
+}
+
+#men::-webkit-scrollbar{
+    width: 0px;
+}
+
+body{
+    overflow: auto;
+}
+
+body::-webkit-scrollbar{
+    width: 10px;
+    background-color: blue;
+}
+body::-webkit-scrollbar-thumb{
+    width: 10px;
+    border-radius: 5px;
+    background-color: red;
+}
